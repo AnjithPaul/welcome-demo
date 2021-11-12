@@ -16,8 +16,8 @@ jobs:
           heroku_app_name: "devops-bootcamp-welcome" #Must be unique in Heroku
           heroku_email: "anjithpaul.mec@gmail.com"
       - name: Build gradle
-        uses: ./gradlew build
+        run: ./gradlew build
       - name: Run tests
-        uses: ./gradlew test
+        run: ./gradlew test
       - name: Run app
-        uses: ./gradlew bootRun
+        run: ./gradlew bootRun
